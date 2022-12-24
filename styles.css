@@ -202,7 +202,7 @@ img {
 
 /**************************************** HOME CSS ****************************************/
 #home {
-    background-image: url(/img/banner.png);
+    background-image: url(banner.png);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -568,7 +568,7 @@ img {
 
 /**************************************** FOOTER CSS ****************************************/
 #footer {
-    background-image: url(/img/ATL.png);
+    background-image: url(/ATL.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
