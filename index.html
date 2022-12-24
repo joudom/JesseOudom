@@ -4,125 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Jesse Oudom | Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link type="image/png" sizes="120x120" rel="icon" href=".../icons8-source-code-120.png">
+    <title>Jesse Oudom | myPortfolio</title>
 </head>
 <body>
-    <div class="home" id="home">
-      <nav class="sticky">
-        <h2 class="logo"><span>my</span>Port<span>fo</span>lio</span></h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="./img/JesseOudomResume2023.pdf" class="btn"><span class="burlywood">my</span>Resume</a>
-      </nav> 
-      <div class="content">
-        <h4>Welcome! My name is</h4> 
-        <h1>Jesse <span>H.</span> Oudom</h1>
-        <h3>I'm an aspiring Web Developer</h3>
-      </div> 
-    </div>
-    <section class="about" id="about">
-        <div class="main">
-            <img src="./img/JOkiba.jpeg">
-            <div class="about-text">
-                <h2><span class="burlywood">About</span> <span>Me</span></h2>
-                <h5>Father + Sports Addict + Foodie + Traveler</h5>
-                <p>
-                    I'm a proud father of two extraordinary boys that are the catalysts for everything I do.
-                    On weekends, I'm likely at their soccer games doing the soccer dad thing. 
-                    Speaking of athletics, if I'm not working, you can catch me watching some kind of sport - soccer, football, curling - whatever.
-                    I've naturally gained a healthy bit of competitiveness as a result, but who doesn't like winning?
-                    I also like to travel. It's been something I've grown accustomed to doing throughout my childhood.
-                    I was born in Florida, raised in Georgia, lived in Nevada, and graduated from high school in California.
-                    One of the benefits of moving around so early in life was the exposure and appreciation for all walks of life...and of course the different types of food out there!
-                    I'm always up for trying something new.
-                </p>
-                <br>
-                <p>
-                    This actually brings me to this point in my journey.
-                    Making a mid-life career change was a very intimidating decision, but it's one I'm glad I made - 
-                    both for my family's sake and also my own personal growth. 
-                    By commiting to DigitalCraft's 26-wk immersive bootcamp, I've proven to myself that it's never too late and that I CAN have an impact on my future.
-                    Being able to create is an art in itself.
-                    As I continue to learn and grow as a developer, I hope to inspire and express myself by creating applications that bridge the gap between imagination and reality.
-                </p>
-                <button type="button">Let's get to work.</button>
+    <section id="header">
+        <div class="header container">
+            <div = class="nav-bar">
+                <div class="brand">
+                    <a href="#home"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <div class="skills" id="skills">
-        <div class="title">
-            <h2>Skills</h2>
+    <section id="home">
+        <div class="home container">
+            <div>
+                <h5>Welcome! I'm <span></span></h5>
+                <h1>Jesse H. Oudom<span></span></h1>
+                <h4>An aspiring web developer<span></span></h4>
+                <a href="#projects" type="button" class="button">My Portfolio</a>
+            </div>
         </div>
-        <div class="box">
-            <img src="./img/html.png"        class="icon" alt="HTML5"/>
-            <img src="./img/css.png"         class="icon" alt="CSS3"/>
-            <img src="./img/bootstrap.png"   class="icon" alt="Bootstrap5"/>
-            <img src="./img/javascript.png"  class="icon" alt="JavaScript"/>
-            <img src="./img/jquery.png"      class="icon" alt="jQuery"/>
-            <img src="./img/reactjs.png"     class="icon" alt="ReactJS"/>
-            <img src="./img/redux.png"       class="icon" alt="Redux"/>
-            <img src="./img/nodejs.png"      class="icon" alt="Node.js"/>
-            <img src="./img/expressjs.png"   class="icon" alt="Express.js"/>
-            <img src="./img/postgresql.png"  class="icon" alt="PostgreSQL"/>
-            <img src="./img/git.png"         class="icon" alt="Git"/>
-            <img src="./img/github.png"      class="icon" alt="GitHub"/>
+    </section>
+    <section id="about">
+        <div class="about container">
+            <div class="about-left">
+                <div class="about-img">
+                    <img src="/img/JOkiba.jpeg" class="img" alt="Jesse + Kiba">
+                </div>
+            </div>
+            <div class="about-right">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <h2>Full Stack Web Developer</h2>
+                <p>
+                    I'm a proud <b>father</b> of two extraordinary boys that are the catalysts for everything that I do. 
+                    On weekends, I'm likely at their soccer games doing the soccer dad thing. 
+                    Speaking of athletics, when I'm not working, you can catch me watching some kind of sport - soccer, football, curling - whatever! 
+                    I also like to travel. It's something I've been accustomed to doing throughout my childhood. 
+                    I was born in Florida, raised in Georgia, lived in Nevada, and graduated from high school in California. 
+                    One of the benefits of moving around so early in life was the exposure and appreciation for all walks of life...and of course discovering all the different types of food! 
+                    I'm always up for <b>trying something new</b>.
+                </p>
+                <p>
+                    This actually segues perfectly to the next item of business. Making that mid-life career change can be very <b>intimidating</b>. 
+                    Many feel that putting your livelihood into something so foreign so late in the game is just too big of a gamble.
+                    However, it's one that I'm glad I made - not only for my family's sake but for my own <b>personal growth</b>.
+                    I think the saying goes <i>"when you stop learning, you stop growing. When you stop growing, you stop living"</i>.
+                    By completing DigitalCrafts, I proved to myself that it wasn't too late and that <b>I CAN</b> still learn. 
+                </p>
+                <p>
+                    Coding is synonymous with <b>creating</b>. Being able to create is an <b>art</b>. 
+                    As I continue to learn and grow as a developer, I hope to inspire and <b>express myself</b> with this art by creating applications that improve the lives of users.
+                </p>
+                <a href="/img/JesseOudomResume-2023.pdf" class="button">My Resume</a>
+            </div>
         </div>
-    </div>
-    <div class="projects" id="projects">
-        <div class="title">
-            <h2>Projects</h2>
+    </section>
+    <section id="skills">
+        <div class="skills container" >
+            <div class="skills-top">
+                <h1 class="section-title">Sk<span>i</span>lls</h1>
+                <p>
+                    My professional background is mainly in logistics.
+                    I've spent the last decade in this fast-paced, ever-changing, <b><i>"I needed that yesterday"</i></b> industry.
+                    The skills I've acquired are <b>time management</b>, <b>communication skills</b>, <b>collaboration</b>, <b>accountability</b>, and most importantly...<b>empathy</b>.
+                </p>
+                <br/>
+                <p>
+                    Having worked so long in transportation, you learn quickly that you must be <b>proactive</b> and manage your time wisely.
+                    This includes planning and effectively communicating with everyone involved with meeting a goal.
+                    It could be vendors, colleagues, or the customers themselves - I've learned that there are just some things you can only <b>accomplish as a team</b>.
+                </p>
+                <br/>
+                <p>
+                    What being part of a team means to me is simply being accountable - not only by holding others accountable but yourself as well.
+                    Taking ownership of a issues and errors aren't easy things to do, but it teaches <b>humilty</b> and that you can't let pride get in the way of the team.
+                    Which brings me to my ability to empathize. At the end of the day, we are all humans trying to do what we feel is best.
+                    It took me some time but I've learned to stop taking things peronally and have instead embraced trying to <b>learn and understand</b> in order to find solutions.
+                    I feel that these skills are <b>transferrable</b> as I enter the tech industry and look forward to the opportunities that await. 
+                </p>
+            </div>
+            <div class="skills-bottom">
+                <div class="skills-item">
+                    <div class="icon"><img src="img/html.png" alt="HTML"/></div>
+                        <h2>HTML5</h2>
+                    <div class="icon"><img src="img/CSS3.png" alt="CSS"/></div>
+                        <h2>CSS3</h2>
+                    <div class="=icon"><img src="img/js.png" alt="JavaScript"/></div>
+                        <h2>JavaScript</h2>
+                    <div class="icon"><img src="img/bootstrap.png" alt="Bootstrap"/></div>
+                        <h2>BootStrap</h2>
+                    <div class="icon"><img src="img/jquery.png" alt="jQuery"/></div>
+                        <h2>jQuery</h2>
+                    <div class="icon"><img src="img/react.png" alt="ReactJS"/></div>
+                        <h2>ReactJS</h2>
+                    <div class="icon"><img src="img/redux.png" alt="Redux"/></div>
+                        <h2>Redux</h2>
+                    <div class="icon"><img src="img/nodejs.png" alt="Node.js"/></div>
+                        <h2>Node.js</h2>
+                    <div class="icon"><img src="img/express.png" alt="Express.js"/></div>
+                        <h2>Express.js</h2>
+                    <div class="icon"><img src="img/postresql.png" alt="PostreSQL"/></div>
+                        <h2>PostreSQL</h2>
+                    <div class="icon"><img src="img/git.png" alt="Git"/></div>
+                        <h2>Git</h2>
+                    <div class="icon"><img src="img/github.png" alt="GitHub"/></div>
+                        <h2>GitHub</h2>
+                </div>
+            </div>
         </div>
-        <div class="project-box">
-            <div class="card">
+    </section>
+    <section id="projects">
+        <div class="projects container">
+          <div class="projects-header">
+            <h1 class="section-title">my <span>Port</span>fo<span>lio</span></h1>
+          </div>
+          <div class="all-projects">
+            <div class="project-item">
+              <div class="project-info">
                 <h1>LocalEyes</h1>
-                <h2>
-                    <a href="https://github.com/joudom/LocalEyes">View Code on GitHub</a>
-                </h2>
-            <div class="desc">
-                <p> - React application allowing users to upload & post
-                    deals found in their local area. <br>
-                    - HTML, CSS, Bootstrap, JavaScript, ReactJS, Git,
-                    Node.js, Express.js, Bcrypt, Cors, Google Maps API
+                <h2>React app allowing users to upload photos & post deals found in their local area</h2>
+                <p>
+                    Technologies include HTML, CSS, Bootstrap, JavaScript, ReactJS, React Bootstrap, Git, GitHub, Node.js, Express.js, Bcrypt, Cors, and Google Maps API.
+                    Worked on a team of 3 members with front-end design & back-end queries to a database. Took lead on developing user authentication.
+                    Took lead on implementing Googles's Map API.
+                </p><br/>
+                <p>
+                    Users can scroll through posts from locals and view items along with their sales description. 
+                    By displaying a photo of the product and a static Google map of the vendor, the user will know exactly what they are looking at and where to get it. 
+                    Registered users will have access to upload deals that they may comes across and contribute to the LocalEyes community. 
+                    The upload feature allows users to enter details of the sales they find and also provide a photo to help others identify the product at hand. 
+                    <br/><br/>
+                    With the edit and delete buttons, user can modify their posts after they are uploaded.
+                    All registered users have their credentials stored in a database where their passwords are hashed for security. 
+                    Logins are only allowed with valid credentials. Users are prompted with error messages if credentials are incorrect or if they do not exist at all. 
+                    All posts are also stored in the LocalEyes database, which allow posts to be edited and searched for in the application.
                 </p>
-            </div>
-        </div>
-        <div class="card">
-            <h1>Drink-182</h1>
-            <h2>
-                <a href="https://github.com/joudom/Drink-182">View Code on GitHub</a>
-            </h2>
-            <div class="desc">
-                <p> - Front-end application allowing users to explore
-                    cocktail recipes & also meals to possibly pair with. <br>
-                    - HTML, CSS, Bootstrap, JavaScript, jQuery, Git,
-                    Text-to-Speech Reader
+                <br/>
+                <p>
+                    At the end of the day, the goal of this application is to serve as a platform for people to help others.
+                    Whether it is by saving money or having a sense of being included in a community, LocalEyes aims to bring people together.
                 </p>
+              </div>
+              <div class="project-img">
+                <iframe 
+                    width="590" height="395" 
+                    src="https://www.youtube.com/embed/3qBDyEIGzQE" title="LocalEyes Demo" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+              </div>
             </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Drink-182</h1>
+                <h2>Front-end app allowing users to explore cocktail & meal recipes</h2>
+                <p>
+                    Technologies include HTML, CSS, Bootstrap, JavaScript, jQuery, Git, GitHub, Text-to-Speech Reader.
+                    Worked on a team of 3 members with front-end design JavaScript functionality. 
+                    Implemented a filter feature that calls an API to display interactive options for users to sort by.
+                    Created a meal feature that displays random images of meals from an API call to possibly pair cocktails with.
+                </p>
+                <p>
+                    This was a very fun project with the team. I was able to gain confidence and knowledge through the collaboration.
+                    We were able to tackle the creation of our cocktail search by pushing the different categories from the API call into an empty array.
+                    The response was then rendered on the app for users to select their cocktail category via a combonation accordion / toggle button search.
+                </p>
+              </div>
+              <div class="project-img">
+                <iframe 
+                    width="590" height="395" 
+                    src="https://www.youtube.com/embed/ju64DXZ0ZP4" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="contact" id="contact">
-        <div class="greet">
-            <h1>Let Connect!</h1>
-            <p>
-                <a href="https://joudom.github.io/JesseOudom/" class="fa-solid fa-palette"> m y P o r t f o l i o</a>
-                <br><br>
-                <a href="https://github.com/joudom" class="fa-brands fa-github"> G i t H u b</a>
-                <br><br>
-                <a href="https://www.linkedin.com/in/jesseoudom/" class="fa-brands fa-linkedin"> L i n k e d I n</a>
-                <br><br>
-                <span class="fa-regular fa-envelope">jesse_oudom@yahoo.com</span>
-            </p>
-        </div>
-    </div>
-
+    </section>
+    <section id="contact">
+        <div class="contact container">
+            <div><h1 class="section-title">Let's <span>Connect</span>!</h1></div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/email.png" alt="email"></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>Jesse_Oudom@yahoo.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/linked.png" alt="email"></div>
+                    <div class="contact-info">
+                        <a href="https://www.linkedin.com/in/jesseoudom/">
+                            <h1>LinkedIn</h1>
+                            <h2>jesseoudom</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="/img/github.png" alt="email"></div>
+                    <div class="contact-info">
+                        <a href="https://github.com/joudom">
+                            <h1>GitHub</h1>
+                            <h2>joudom</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#home" type="button" class="button">HOME</a>
+        </div> 
+    </section>
+    <footer id="footer">
+        <footer class="footer container">
+            <h1 class="farewell">SEE YOU SOON!</h1>
+        </footer>
+    </footer>
+    <script src="src/main.js"></script>
 </body>
 </html>
