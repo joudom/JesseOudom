@@ -707,8 +707,4 @@ img {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
 }
